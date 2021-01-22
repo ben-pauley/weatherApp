@@ -1,0 +1,68 @@
+:root {
+  --white: #fff;
+}
+
+.navbar {
+  color: var(--white);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.sidenav {
+  padding: 1rem;
+}
+
+#city-input {
+  margin-right: 0.3rem;
+  padding: 0.5rem;
+}
+
+#city-buttons-div {
+  width: 90%;
+}
+
+.city-button {
+  padding: 1rem;
+  text-align: left;
+}
+
+#weather-info-body {
+  display: none;
+  margin-top: 1rem;
+}
+
+.row {
+  margin: 0.2rem;
+}
+
+.current-day {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  margin-bottom: 1.5rem;
+}
+
+#uviValue {
+  border: 0.1rem solid transparent;
+  border-radius: 0.25rem;
+  color: var(--white);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+}
+
+#five-day-header {
+  margin-left: 0.5rem;
+}
+
+.five-day {
+  color: var(--white);
+  margin-right: 1%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.five-day-body {
+  padding: 0.5rem;
+}

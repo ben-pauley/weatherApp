@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark"><h1>Weather Dashboard</h1></nav>
+    <main class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-4 sidenav bg-light">
+          <h4>Search for a city:</h4>
+          <form class="input-group">
+            <input type="text" id="city-input" />
+            <input id="add-city" type="submit" value="&#xf002" class="fa fa-input btn btn-primary"/>
+          </form>
+
+          <br />
+
+          <div
+            class="btn-group-vertical"
+            role="group"
+            aria-label="Vertical button group"
+            id="city-buttons-div"
+          >
+          </div>
+        </div>
+
+        <div class="col-sm-8" id="weather-info-body">
+          <div class="row card current-day">
+            <div class="card-body">
+              <h3 class="card-title" id="city-date-icon"></h3>
+              <p class="card-text" id="current-temp"></p>
+              <p class="card-text" id="current-humidity"></p>
+              <p class="card-text" id="current-wind-speed"></p>
+              <p class="card-text" id="current-uvi"><span id="uviValue">3</span></p>
+            </div>
+          </div>
+
+          <div class="row" id="five-day-header">
+            <h4>5-Day Forecast:</h4>
+          </div>
+
+          <div class="row">
+            <div class="card five-day col-sm-2 bg-primary">
+              <div class="card-body five-day-body">
+                <h5 class="card-title" id="forecast-date-1"></h5>
+                <img id="forecast-icon-1"></img>
+                <p class="card-text" id="forecast-temp-1"></p>
+                <p class="card-text" id="forecast-humidity-1"></p>
+              </div>
+            </div>
+            <div class="card five-day col-sm-2 bg-primary">
+              <div class="card-body five-day-body">
+                <h5 class="card-title" id="forecast-date-2"></h5>
+                <img id="forecast-icon-2"></img>
+                <p class="card-text" id="forecast-temp-2"></p>
+                <p class="card-text" id="forecast-humidity-2"></p>
+              </div>
+            </div>
+            <div class="card five-day col-sm-2 bg-primary">
+              <div class="card-body five-day-body">
+                <h5 class="card-title" id="forecast-date-3"></h5>
+                <img id="forecast-icon-3"></img>
+                <p class="card-text" id="forecast-temp-3"></p>
+                <p class="card-text" id="forecast-humidity-3"></p>
+              </div>
+            </div>
+            <div class="card five-day col-sm-2 bg-primary">
+              <div class="card-body five-day-body">
+                <h5 class="card-title" id="forecast-date-4"></h5>
+                <img id="forecast-icon-4"></img>
+                <p class="card-text" id="forecast-temp-4"></p>
+                <p class="card-text" id="forecast-humidity-4"></p>
+              </div>
+            </div>
+            <div class="card five-day col-sm-2 bg-primary">
+              <div class="card-body five-day-body">
+                <h5 class="card-title" id="forecast-date-5"></h5>
+                <img id="forecast-icon-5"></img>
+                <p class="card-text" id="forecast-temp-5"></p>
+                <p class="card-text" id="forecast-humidity-5"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
